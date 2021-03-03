@@ -1,0 +1,18 @@
+name: jq-action
+description: "Execute jq"
+
+inputs:
+  json:
+    description: "input of jq command"
+    required: true
+  filter:
+    description: "filter of jq command"
+    required: true
+
+outputs:
+  message:
+    description: "error or output message of jq command"
+
+runs:
+  using: "docker"
+  image: 'Dockerfile'
