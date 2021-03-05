@@ -10,8 +10,10 @@ inputs:
     required: true
 
 outputs:
-  message:
+  result:
     description: "error or output message of jq command"
+  message:
+    description: "error or output message of jq command (deprecated)"
 
 runs:
   using: "docker"
